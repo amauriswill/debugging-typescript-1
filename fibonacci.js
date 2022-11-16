@@ -4,10 +4,10 @@ function Fibonacci(n)
   let current = 1;
   let sum;
   
-  for (let i = 2; i < n; i++)
+  for (let i = 2; i <= n; i++)
   {
     sum = previous + current;
-    previous = previous;
+    previous = current;
     current = sum;
   }
   
@@ -25,4 +25,4 @@ Fibonacci(3) = 2 (1 + 1)
 Fibonacci(4) = 3 (1 + 2)
 Fibonacci(5) = 5 (2 + 3)
 */
-console.log(Fibonacci(5));
+console.log(Fibonacci(3));
